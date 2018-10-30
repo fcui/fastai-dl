@@ -70,3 +70,7 @@
     torch.cuda.is_available()
     torch.backends.cudnn.enabled
     ```
+
+5. 获取[数据](http://files.fast.ai/data/dogscats.zip), 将其解压至前面指定的目录`PATH`中
+
+6. 
