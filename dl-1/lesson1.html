@@ -11781,7 +11781,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "\u76ee\u5f55", "title_sidebar": "\u76ee\u5f55", "toc_cell": true, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "235px"}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -11805,8 +11805,8 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#windows-10下的运行环境配置" data-toc-modified-id="windows-10下的运行环境配置-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>windows 10下的运行环境配置</a></span></li><li><span><a href="#第一个示例" data-toc-modified-id="第一个示例-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>第一个示例</a></span><ul class="toc-item"><li><span><a href="#准备工作" data-toc-modified-id="准备工作-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>准备工作</a></span></li><li><span><a href="#下载数据" data-toc-modified-id="下载数据-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>下载数据</a></span></li><li><span><a href="#训练数据" data-toc-modified-id="训练数据-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>训练数据</a></span></li><li><span><a href="#分析结果" data-toc-modified-id="分析结果-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>分析结果</a></span><ul class="toc-item"><li><span><a href="#验证效果" data-toc-modified-id="验证效果-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>验证效果</a></span></li></ul></li><li><span><a href="#调整学习速率" data-toc-modified-id="调整学习速率-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>调整学习速率</a></span></li></ul></li></ul></div>
+<p><h1>目录<span class="tocSkip"></span></h1></p>
+<div class="toc"><ul class="toc-item"><li><span><a href="#windows-10下的运行环境配置" data-toc-modified-id="windows-10下的运行环境配置-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>windows 10下的运行环境配置</a></span></li><li><span><a href="#第一个示例" data-toc-modified-id="第一个示例-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>第一个示例</a></span><ul class="toc-item"><li><span><a href="#准备工作" data-toc-modified-id="准备工作-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>准备工作</a></span></li><li><span><a href="#下载数据" data-toc-modified-id="下载数据-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>下载数据</a></span></li><li><span><a href="#训练数据" data-toc-modified-id="训练数据-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>训练数据</a></span></li><li><span><a href="#分析结果" data-toc-modified-id="分析结果-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>分析结果</a></span><ul class="toc-item"><li><span><a href="#验证效果" data-toc-modified-id="验证效果-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>验证效果</a></span></li></ul></li><li><span><a href="#调整学习速率" data-toc-modified-id="调整学习速率-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>调整学习速率</a></span></li></ul></li><li><span><a href="#提升模型" data-toc-modified-id="提升模型-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>提升模型</a></span><ul class="toc-item"><li><span><a href="#数据增强" data-toc-modified-id="数据增强-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>数据增强</a></span></li><li><span><a href="#微调和差分学习速度退火" data-toc-modified-id="微调和差分学习速度退火-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>微调和差分学习速度退火</a></span></li></ul></li><li><span><a href="#分析结果" data-toc-modified-id="分析结果-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>分析结果</a></span><ul class="toc-item"><li><span><a href="#混淆矩阵" data-toc-modified-id="混淆矩阵-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>混淆矩阵</a></span></li></ul></li></ul></div>
 </div>
 </div>
 </div>
@@ -12231,6 +12231,17 @@ pip intall pillow
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>其中train、valid、test分别存放了训练数据、验证数据、测试数据; 其下又有各类图片的子目录. models是后续调用<code>learn.save()</code>时模型参数存放的目录. 对本例而言train目录下有cats、dogs两个子目录, 每个子目录下大致有11500张图片. valid目录下，cats、dogs分别有1000张图片。 上述路径存储方式是一种通用的目录结构，为大多数深度学习框架所支持.</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
@@ -12268,8 +12279,41 @@ pip intall pillow
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#35757;&#32451;&#25968;&#25454;">&#35757;&#32451;&#25968;&#25454;<a class="anchor-link" href="#&#35757;&#32451;&#25968;&#25454;">&#182;</a></h3><ul>
-<li>训练数据, 进行拟合:</li>
+<h3 id="&#35757;&#32451;&#25968;&#25454;">&#35757;&#32451;&#25968;&#25454;<a class="anchor-link" href="#&#35757;&#32451;&#25968;&#25454;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>按照指定的网络架构, 根据训练数据, 构造分类器. 本例中采用了在ImageNet数据集上训练好的分类网络, 因此采用<code>pretrained()</code>方法. 这样, 只需训练最后的全连接层即可. 由于只需训练最后面的全连接层, 因此由已有的卷积核参数生成的结果保持不变, 所以在此设置<code>precompute=True</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>这里采用的是<code>resnet34</code>模型, 具体可参见<a href="https://github.com/KaimingHe/deep-residual-networks">这里</a>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><code>fit</code>方法的第一个参数<code>0.01</code>为深度学习网络的超参数: 学习速率, 即每次优化损失函数时, 沿梯度方向前进的步长.</p>
+</li>
+<li><p><code>fit</code>方法的第二个参数<code>2</code>, 在此可以简单地理解为将遍历数据集两次. 该值和后续的一个额外参数cycle_len会有关联。</p>
+</li>
 </ul>
 
 </div>
@@ -12304,10 +12348,10 @@ pip intall pillow
 
  
  
-<div id="de33ea8e-a20d-4139-ab0d-0153a7ca5311"></div>
+<div id="8fd9ee8c-abc7-4547-b8a6-f7fe9c89c902"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
+var element = $('#8fd9ee8c-abc7-4547-b8a6-f7fe9c89c902');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "e45a9076c18b47dbb1efd1f19eba91f0", "version_major": 2, "version_minor": 0}
@@ -12346,20 +12390,6 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>这里采用的是<code>resnet34</code>模型, 具体可参见<a href="https://github.com/KaimingHe/deep-residual-networks">这里</a>.<ul>
-<li>在上述的<code>data</code>中包含了一些有用的属性, 比如</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12818,7 +12848,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_45_1.png"
+<img src="output_48_1.png"
 >
 </div>
 
@@ -12875,7 +12905,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_47_1.png"
+<img src="output_50_1.png"
 >
 </div>
 
@@ -12952,7 +12982,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_50_1.png"
+<img src="output_53_1.png"
 >
 </div>
 
@@ -12997,7 +13027,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_51_1.png"
+<img src="output_54_1.png"
 >
 </div>
 
@@ -13053,7 +13083,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_53_1.png"
+<img src="output_56_1.png"
 >
 </div>
 
@@ -13098,7 +13128,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_54_1.png"
+<img src="output_57_1.png"
 >
 </div>
 
@@ -13113,7 +13143,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>最不确定的分类结果, 即概率在0.5附件的情况:</li>
+<li>最不确定的分类结果, 即概率在0.5附近的情况:</li>
 </ul>
 
 </div>
@@ -13155,7 +13185,7 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 
 
 <div class="output_png output_subarea ">
-<img src="output_56_1.png"
+<img src="output_59_1.png"
 >
 </div>
 
@@ -13170,6 +13200,650 @@ var element = $('#de33ea8e-a20d-4139-ab0d-0153a7ca5311');
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#35843;&#25972;&#23398;&#20064;&#36895;&#29575;">&#35843;&#25972;&#23398;&#20064;&#36895;&#29575;<a class="anchor-link" href="#&#35843;&#25972;&#23398;&#20064;&#36895;&#29575;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>学习速率是最难设定的参数, 其能显著影响模型性能. </li>
+<li>方法<code>learn.lr_find()</code>用于搜索最优的学习速率, 思想来自于2015年的一篇文章<a href="https://arxiv.org/abs/1506.01186">Cyclical Learning Rates for Training Neural Networks</a>, 其思想是先将速率设定为非常小的值, 然后慢慢增大, 直到损失函数停止下降.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 重新设定学习器</span>
+<span class="n">learn</span> <span class="o">=</span> <span class="n">ConvLearner</span><span class="o">.</span><span class="n">pretrained</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">precompute</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">lrf</span> <span class="o">=</span> <span class="n">learn</span><span class="o">.</span><span class="n">lr_find</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="c471ab16-ec3f-4fc8-883e-056a2645a17a"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#c471ab16-ec3f-4fc8-883e-056a2645a17a');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "36751ac02f1a4dac8fbb54886fc6f78d", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> 85%|███████████████████████████████████████████████████████          | 305/360 [01:48&lt;00:12,  4.56it/s, loss=0.319]</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># learn的属性sched中包含历次得到的学习速率</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">sched</span><span class="o">.</span><span class="n">plot_lr</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="output_63_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>这里的迭代是指的一次<code>SGD</code>或小批量迭代, 而一个<code>epoch</code>可能会包含多个迭代.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 损失函数的变化</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">sched</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="output_65_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>在<code>lr=1e-2 (0.01)</code>时, 损失函数仍然在下降, 这就是上文所采用的速率.</li>
+<li>需要注意到, 随着运算的进行, 最优学习速率是会改变的, 所以有时需要重新运行此函数.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#25552;&#21319;&#27169;&#22411;">&#25552;&#21319;&#27169;&#22411;<a class="anchor-link" href="#&#25552;&#21319;&#27169;&#22411;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#25968;&#25454;&#22686;&#24378;">&#25968;&#25454;&#22686;&#24378;<a class="anchor-link" href="#&#25968;&#25454;&#22686;&#24378;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>如果只是在原数据上进行更多的训练, 可能就会产生过拟合, 因为这样会造成识别更多训练集的特点, 对于在测试集上的泛化是不利的. 这里引入一种数据增强的方式, 但并不会影响图片本身所要表达的事物, 比如水平翻转, 放缩以及旋转.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>本文是在已有的图片卷积网络的基础上构建新网络，而已有的图片卷积网络通常是在尺寸为224×224或是299×299的图片集上进行训练的，因此，Fast.AI会对输入图片进行裁剪，以使之满足网络输入层的要求。这一操作是通过在获取图片分类器时，传入参数tfms来实现的。如上节所示：<div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">ImageClassfierData</span><span class="o">.</span><span class="n">from_paths</span><span class="p">(</span><span class="n">PATH</span><span class="p">,</span> <span class="n">tfms</span><span class="o">=</span><span class="n">tfms_from_model</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">sz</span><span class="p">))</span>
+</pre></div>
+但事实上，裁剪后的图像可能会丢失关键特征区域（如猫或狗的脑袋），因此需要对输入图片进行额外的修饰，使得所构建的网络尽可能地"看全图片"。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tfms</span> <span class="o">=</span> <span class="n">tfms_from_model</span><span class="p">(</span><span class="n">resnet34</span><span class="p">,</span> <span class="n">sz</span><span class="p">,</span> <span class="n">aug_tfms</span><span class="o">=</span><span class="n">transforms_side_on</span><span class="p">,</span> <span class="n">max_zoom</span><span class="o">=</span><span class="mf">1.1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">get_augs</span><span class="p">():</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">ImageClassifierData</span><span class="o">.</span><span class="n">from_paths</span><span class="p">(</span><span class="n">PATH</span><span class="p">,</span> <span class="n">bs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">tfms</span><span class="o">=</span><span class="n">tfms</span><span class="p">,</span> <span class="n">num_workers</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">aug_dl</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">trn_ds</span><span class="o">.</span><span class="n">denorm</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>在<code>tfms_from_model</code>中引入参数<code>aug_tfms</code>(augmentation transforms), 其包含了一系列可用于随机改变图片的函数. 对于主要从侧面拍摄的照片(例如, 大多数狗和猫的照片, 而不是从上到下拍摄的照片, 例如卫星图像), 可以使用预定义的函数列表<code>transforms_side_on</code>. 也可以通过参数<code>max_zoom</code>指定图片放缩的幅度, 即最大不超过1.1倍.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ims</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">get_augs</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)])</span>
+<span class="n">plots</span><span class="p">(</span><span class="n">ims</span><span class="p">,</span> <span class="n">rows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="output_73_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>根据上面的数据增加方法, 重新进行训练</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">ImageClassifierData</span><span class="o">.</span><span class="n">from_paths</span><span class="p">(</span><span class="n">PATH</span><span class="p">,</span> <span class="n">tfms</span><span class="o">=</span><span class="n">tfms</span><span class="p">)</span>
+<span class="n">learn</span> <span class="o">=</span> <span class="n">ConvLearner</span><span class="o">.</span><span class="n">pretrained</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">precompute</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="mf">1e-2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="a4db4607-1724-4089-8c2b-8dc068178b94"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a4db4607-1724-4089-8c2b-8dc068178b94');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "80059f7070ab48d68dc2320a2ed373a4", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>epoch      trn_loss   val_loss   accuracy                                                                           
+    0      0.041123   0.030777   0.988     
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[43]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.0307765571475029, 0.988]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>由于输入图片被改变, 由已有的卷积核所生成的结果应发生相应改变, 因此设置<code>precompute=False</code>. 当调用方法<code>fit</code>时, 仅有最后一层的权重系数会被更新, 其它层都是被冻结的, 可以用如下方式重新修改:</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>在随机梯度下降算法中, 选取某一点做出发点, 然后针对损失函数逐步优化相应参数. 由于开始时网络对最优解并无信息, 因此会随机的选择参数值做为出发点. 期望优化算法能够有效地进行梯度下降, 从而尽快的找到最优解. 但随着数据的投喂, 网络对最优解也有了一定的认知, 而此时的参数估计值也越来越接近最优解. 则期望优化算法不要跨太大的步子, 从而避免在最优解附近震荡. 基于这样的理念, 随机梯度下降算法将使用<strong>逐步减小学习速率(Learning Rate Annealing)</strong>的方法。</li>
+<li>另一方面, 期望最终训练出的网络, 有稳定的泛化能力, 即输入数据有微小变化时, 其输出结果不至于变化的太离谱. 这就要求训练所得的参数落在损失函数的较为平稳的区域. 为达到这一目的, 与逐步减小学习速率相反, 会定期增大学习速率, 以跳出底部尖锐(不稳定)的低损失函数区域. 这就是随机梯度算法中的学习速率重置技巧(SGDR, Stochastic Gradient Descent with Restarts), 详情可见文章<a href="https://arxiv.org/abs/1704.00109">Snapshot Ensembles</a>. 如下图所示:<img src="lr.jpg" width=550/></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span><span class="o">.</span><span class="n">precompute</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="mf">1e-2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">cycle_len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="c4e04a26-0d45-49ba-a3d2-2033f4bb45e7"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#c4e04a26-0d45-49ba-a3d2-2033f4bb45e7');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "defbec6f47d647229e361380297c906b", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>epoch      trn_loss   val_loss   accuracy                                                                           
+    0      0.041991   0.030444   0.9885    
+    1      0.041338   0.029116   0.988                                                                              
+    2      0.048849   0.029138   0.9885                                                                             
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[44]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.029138397097587584, 0.9885]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>其中<code>cycle_len</code>指定了学习速率重置的周期, 本例中即在遍历一次图片集后, 重置学习速率. 参数<code>3</code>的说明: <code>3</code>表示学习速率重置次数. 使用语句<code>learn.sched.plot_lr()</code>可以画出学习速率的变化曲线：</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span><span class="o">.</span><span class="n">sched</span><span class="o">.</span><span class="n">plot_lr</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="output_80_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>经过上面的计算发现, 在测试集上的精度基本没有提高, 这说明最后一层的训练已经没有必要再做了. 既然已经没有改进的必要, 就可以将这个模型保存起来, 以后直接调用即可, 而不需要重新计算.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;224_lastlayer&#39;</span><span class="p">)</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;224_lastlayer&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#24494;&#35843;&#21644;&#24046;&#20998;&#23398;&#20064;&#36895;&#24230;&#36864;&#28779;">&#24494;&#35843;&#21644;&#24046;&#20998;&#23398;&#20064;&#36895;&#24230;&#36864;&#28779;<a class="anchor-link" href="#&#24494;&#35843;&#21644;&#24046;&#20998;&#23398;&#20064;&#36895;&#24230;&#36864;&#28779;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>在训练好一层之后, 就可以尝试去训练其它层了. 这时需要去解冻其它层</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span><span class="o">.</span><span class="n">unfreeze</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>由于之前的网络各层都已经被训练好去用于imagenet的照片, 只有最后一层是随机初始化的, 故这里要谨慎微调不要破坏这些已经调整好的权重参数.</li>
+<li>为了达到这个目的, 采用<code>differential learning rates</code>方式, 就是在前几层设定的学习速率为<code>1e-4</code>, 中间几次是<code>1e-3</code>, 全连接层(FC layers)是<code>1e-2</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1e-4</span><span class="p">,</span> <span class="mf">1e-3</span><span class="p">,</span> <span class="mf">1e-2</span><span class="p">])</span>
+<span class="n">learn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">lr</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">cycle_len</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cycle_mult</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="ba0ea777-e10d-4bf7-ac4d-e365c2fcffbc"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#ba0ea777-e10d-4bf7-ac4d-e365c2fcffbc');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7018016906904fe3ba87d48021b226c4", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>epoch      trn_loss   val_loss   accuracy                                                                           
+    0      0.02226    0.019886   0.991     
+    1      0.024929   0.020554   0.9915                                                                             
+    2      0.023509   0.02312    0.9915                                                                             
+    3      0.024793   0.016961   0.993                                                                              
+    4      0.012406   0.019121   0.993                                                                              
+    5      0.015487   0.018587   0.9915                                                                             
+    6      0.012023   0.018002   0.9925                                                                             
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[50]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.018002333730459213, 0.9925]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>在这里引入了参数<code>cycle_mult</code>, </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20998;&#26512;&#32467;&#26524;">&#20998;&#26512;&#32467;&#26524;<a class="anchor-link" href="#&#20998;&#26512;&#32467;&#26524;">&#182;</a></h2><h3 id="&#28151;&#28102;&#30697;&#38453;">&#28151;&#28102;&#30697;&#38453;<a class="anchor-link" href="#&#28151;&#28102;&#30697;&#38453;">&#182;</a></h3>
 </div>
 </div>
 </div>
